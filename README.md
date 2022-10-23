@@ -11,9 +11,10 @@ yarn dev
 ```
 
 
- Run npm intall --legacy -peers -deps to only install the packages inside package.json file
+ ```Run npm intall --legacy -peers -deps to only install the packages inside package.json file
+ ```
 
- 
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
