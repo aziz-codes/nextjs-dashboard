@@ -1,28 +1,28 @@
-import React,{createContext,useContext,useState} from "react";
-
+import React, { createContext, useContext, useState } from "react";
 
 const stateContext = createContext();
 
 const initialState = {
   sidebar: true,
-}
+};
 
+export const ContextProvider = ({ children }) => {
+  const [activeMenu, setActiveMenu] = useState(true);
 
-export const ContextProvider = ({children})=>{
+  const [open, setOpen] = useState(false);
 
-     const [activeMenu,setActiveMenu] = useState(true);
+  return (
+    <stateContext.Provider
+      value={{
+        activeMenu,
+        setActiveMenu,
+        open,
+        setOpen,
+      }}
+    >
+      {children}
+    </stateContext.Provider>
+  );
+};
 
-
-    return(
-        <stateContext.Provider
-        value={{
-            activeMenu,
-            setActiveMenu
-        }}
-        >
-{children}
-        </stateContext.Provider>
-    )
-}
-
-export const useStateContext = () =>useContext(stateContext);
+export const useStateContext = () => useContext(stateContext);

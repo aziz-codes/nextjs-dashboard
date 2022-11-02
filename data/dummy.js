@@ -5,6 +5,7 @@ import {
   ChartBarIcon,
   EnvelopeIcon,
   TrashIcon,
+  PencilSquareIcon,
 } from "@heroicons/react/24/outline";
 export const links = [
   {
@@ -33,9 +34,9 @@ export const links = [
     to: "/mails",
   },
   {
-    name: "Finance",
-    icon: <BanknotesIcon />,
-    to: "/finance",
+    name: "Notes",
+    icon: <PencilSquareIcon />,
+    to: "/notes",
   },
   {
     name: "Trash",

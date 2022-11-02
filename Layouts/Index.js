@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
+import Settings from "../components/Settings";
+import Modal from "../components/Modal";
 import Sidebar from "../components/Sidebar";
 import { useStateContext } from "../context/contextProvider";
 const Index = ({ children }) => {
@@ -20,6 +22,8 @@ const Index = ({ children }) => {
 
         <div className="mt-14 ml-3">{children}</div>
       </div>
+      <Settings />
+      <Modal />
     </div>
   );
 };
