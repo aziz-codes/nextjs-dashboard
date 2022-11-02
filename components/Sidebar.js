@@ -13,9 +13,9 @@ const Sidebar = () => {
     <div>
       {activeMenu ? (
         <div
-          className="relative h-screen shadow-2xl md:shadow-xl
-  w-64 border border-t-white flex flex-col items-start 
-  divide-y-2 flex-wrap "
+          className="shadow-2xl md:shadow-xl
+  border border-t-white flex flex-col items-start 
+  divide-y-2 flex-wrap h-screen"
           style={{ zIndex: "10000" }}
         >
           {/* Logo and brand section */}
@@ -41,16 +41,6 @@ const Sidebar = () => {
                 <h4 className="text-md font-thin ">{item.name}</h4>
               </div>
             ))}
-          </div>
-
-          <div className="relative w-full flex flex-col items-center justify-center gap-2 pt-6">
-            <h4 className="pl-2 text-gray-400">Choose your color theme</h4>
-            <div className="flex flex-row items-center justify-center gap-3">
-              <div className="h-8 w-8 rounded-full bg-red-600 cursor-pointer hover:scale-125 transition-all duration-150"></div>
-              <div className="h-8 w-8 rounded-full bg-green-600 cursor-pointer hover:scale-125 transition-all duration-150"></div>
-              <div className="h-8 w-8 rounded-full bg-blue-600 cursor-pointer hover:scale-125 transition-all duration-150"></div>
-              <div className="h-8 w-8 rounded-full bg-gray-600 cursor-pointer hover:scale-125 transition-all duration-150"></div>
-            </div>
           </div>
         </div>
       ) : null}

@@ -1,7 +1,13 @@
 import React from "react";
-
+import Layout from "../Layouts/Index";
 const mails = () => {
-  return <div>mails</div>;
+  return (
+    <>
+      <Layout>
+        <h4>This is finance page</h4>
+      </Layout>
+    </>
+  );
 };
 
 export default mails;

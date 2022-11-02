@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div
-      className="top-0 flex flex-row  mt-3
+      className="relative top-0 flex flex-row  mt-3
     items-center justify-between gap-3
        mr-2"
       style={{ zIndex: "0" }}

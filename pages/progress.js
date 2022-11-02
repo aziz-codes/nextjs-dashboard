@@ -1,7 +1,13 @@
 import React from "react";
-
+import Layout from "../Layouts/Index";
 const progress = () => {
-  return <div>progress</div>;
+  return (
+    <>
+      <Layout>
+        <h4>This is Progress page</h4>
+      </Layout>
+    </>
+  );
 };
 
 export default progress;

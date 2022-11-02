@@ -1,7 +1,13 @@
 import React from "react";
-
+import Layout from "../Layouts/Index";
 const trash = () => {
-  return <div>THis is the biggest div inside pages foler</div>;
+  return (
+    <>
+      <Layout>
+        <h4>This is trash page</h4>
+      </Layout>
+    </>
+  );
 };
 
 export default trash;
